@@ -1,0 +1,83 @@
+package m1;
+
+import android.database.Cursor;
+import java.util.ArrayList;
+import java.util.List;
+
+/* compiled from: MyApplication */
+public final class u implements t {
+
+    /* renamed from: a, reason: collision with root package name */
+    private final androidx.room.h f24750a;
+
+    /* renamed from: b, reason: collision with root package name */
+    private final u0.a f24751b;
+
+    /* compiled from: MyApplication */
+    class a extends u0.a {
+        a(androidx.room.h hVar) {
+            super(hVar);
+        }
+
+        @Override // u0.d
+        public String d() {
+            return "INSERT OR IGNORE INTO `WorkTag` (`tag`,`work_spec_id`) VALUES (?,?)";
+        }
+
+        @Override // u0.a
+        /* renamed from: i, reason: merged with bridge method [inline-methods] */
+        public void g(x0.f fVar, s sVar) {
+            String str = sVar.f24748a;
+            if (str == null) {
+                fVar.p0(1);
+            } else {
+                fVar.E(1, str);
+            }
+            String str2 = sVar.f24749b;
+            if (str2 == null) {
+                fVar.p0(2);
+            } else {
+                fVar.E(2, str2);
+            }
+        }
+    }
+
+    public u(androidx.room.h hVar) {
+        this.f24750a = hVar;
+        this.f24751b = new a(hVar);
+    }
+
+    @Override // m1.t
+    public void a(s sVar) {
+        this.f24750a.b();
+        this.f24750a.c();
+        try {
+            this.f24751b.h(sVar);
+            this.f24750a.r();
+        } finally {
+            this.f24750a.g();
+        }
+    }
+
+    @Override // m1.t
+    public List b(String str) {
+        u0.c e8 = u0.c.e("SELECT DISTINCT tag FROM worktag WHERE work_spec_id=?", 1);
+        if (str == null) {
+            e8.p0(1);
+        } else {
+            e8.E(1, str);
+        }
+        this.f24750a.b();
+        Cursor b8 = w0.c.b(this.f24750a, e8, false, null);
+        try {
+            ArrayList arrayList = new ArrayList(b8.getCount());
+            while (b8.moveToNext()) {
+                arrayList.add(b8.getString(0));
+            }
+            return arrayList;
+        } finally {
+            b8.close();
+            e8.j();
+        }
+    }
+}

@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.ScheduledExecutorService;
+
+/* compiled from: MyApplication */
+public final class mn2 implements n85 {
+
+    /* renamed from: a, reason: collision with root package name */
+    private final w85 f12313a;
+
+    /* renamed from: b, reason: collision with root package name */
+    private final w85 f12314b;
+
+    private mn2(w85 w85Var, w85 w85Var2) {
+        this.f12313a = w85Var;
+        this.f12314b = w85Var2;
+    }
+
+    public static mn2 a(w85 w85Var, w85 w85Var2) {
+        return new mn2(w85Var, w85Var2);
+    }
+
+    @Override // com.google.android.gms.internal.ads.b95
+    public final /* bridge */ /* synthetic */ Object b() {
+        return new fq2((dm2) this.f12313a.b(), ((Integer) s2.b0.c().d(uy.pd)).intValue(), (ScheduledExecutorService) this.f12314b.b());
+    }
+}

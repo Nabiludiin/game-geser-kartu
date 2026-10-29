@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/my_button_bg_lite"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_upgrade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@color/option_text_enabled"
+        android:layout_centerVertical="true"
+        android:paddingStart="12dp"
+        app:srcCompat="@drawable/biohazard_vector"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/image_upgrade">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/option_text_enabled"
+            android:gravity="center"
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/upgrade_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/remove_ads"
+            android:layout_weight="1"/>
+        <TextView
+            android:textColor="@color/option_text_enabled"
+            android:gravity="center"
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/upgrade_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/remove_ads_price"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

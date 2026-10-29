@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Atribut sudah dideklarasikan di attrs.xml, di sini hanya dikelompokkan untuk SwipeDeck -->
+    <declare-styleable name="SwipeDeck">
+        <attr name="card_spacing" />
+        <attr name="max_visible" />
+        <attr name="opacity_end" />
+        <attr name="preview_layout" />
+        <attr name="render_above" />
+        <attr name="rotation_degrees" />
+        <attr name="swipe_enabled" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,14 @@
+package x;
+
+import android.view.View;
+
+/* compiled from: MyApplication */
+public abstract class a {
+    public static String a(View view) {
+        try {
+            return view.getContext().getResources().getResourceEntryName(view.getId());
+        } catch (Exception unused) {
+            return "UNKNOWN";
+        }
+    }
+}

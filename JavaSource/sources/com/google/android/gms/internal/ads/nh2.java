@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: MyApplication */
+final /* synthetic */ class nh2 implements gx2 {
+
+    /* renamed from: a, reason: collision with root package name */
+    static final /* synthetic */ nh2 f12734a = new nh2();
+
+    private /* synthetic */ nh2() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.gx2
+    public final /* synthetic */ void d(Object obj) {
+        ((s2.i0) obj).c();
+    }
+}

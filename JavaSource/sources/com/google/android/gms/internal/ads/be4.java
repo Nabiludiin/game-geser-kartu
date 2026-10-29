@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: MyApplication */
+final /* synthetic */ class be4 implements rg4 {
+
+    /* renamed from: a, reason: collision with root package name */
+    static final /* synthetic */ be4 f5737a = new be4();
+
+    private /* synthetic */ be4() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.rg4
+    public final /* synthetic */ b84 a(xi4 xi4Var, w84 w84Var) {
+        return de4.e((ri4) xi4Var, w84Var);
+    }
+}
